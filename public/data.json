@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Shakib Al Hasan",
+    "image": "https://i.ibb.co.com/bRQTSdCc/sakib.jpg",
+    "rating": 95,
+    "price": 120000,
+    "role": "All-rounder",
+    "batting_style": "Left-hand bat",
+    "country": "Bangladesh"
+  },
+  {
+    "id": 2,
+    "name": "Tamim Iqbal",
+    "image": "https://i.ibb.co.com/1JKMsr3Z/301403-3.jpg",
+    "rating": 88,
+    "price": 90000,
+    "role": "Batsman",
+    "batting_style": "Left-hand bat",
+    "country": "Bangladesh"
+  },
+  {
+    "id": 3,
+    "name": "Mushfiqur Rahim",
+    "image": "https://i.ibb.co.com/xS6PGHbC/mushfiqur-rahim-fb.jpg",
+    "rating": 87,
+    "price": 85000,
+    "role": "Wicket-keeper",
+    "batting_style": "Right-hand bat",
+    "country": "Bangladesh"
+  },
+  {
+    "id": 4,
+    "name": "Mahmudullah Riyad",
+    "image": "https://i.ibb.co.com/wFv7dsYS/image-25983-1635861932.jpg",
+    "rating": 82,
+    "price": 78000,
+    "role": "All-rounder",
+    "batting_style": "Right-hand bat",
+    "country": "Bangladesh"
+  },
+  {
+    "id": 5,
+    "name": "Mustafizur Rahman",
+    "image": "https://i.ibb.co.com/39VVHtbT/wwwbssnewsnet-image-233638-1735228929-20241227091857.jpg",
+    "rating": 89,
+    "price": 95000,
+    "role": "Bowler",
+    "batting_style": "Left-hand bat",
+    "country": "Bangladesh"
+  },
+  {
+    "id": 6,
+    "name": "Litton Das",
+    "image": "https://i.ibb.co.com/39rnb1G0/1632749-litton-das.jpg",
+    "rating": 86,
+    "price": 80000,
+    "role": "Batsman",
+    "batting_style": "Right-hand bat",
+    "country": "Bangladesh"
+  },
+  {
+    "id": 7,
+    "name": "Andre Russell",
+    "image": "https://i.ibb.co.com/Cpn5g4Zt/l52320240328173656.jpg",
+    "rating": 94,
+    "price": 150000,
+    "role": "All-rounder",
+    "batting_style": "Right-hand bat",
+    "country": "West Indies"
+  },
+  {
+    "id": 8,
+    "name": "Chris Gayle",
+    "image": "https://i.ibb.co.com/N2npfMyf/123763319.jpg",
+    "rating": 92,
+    "price": 140000,
+    "role": "Batsman",
+    "batting_style": "Left-hand bat",
+    "country": "West Indies"
+  },
+  {
+    "id": 9,
+    "name": "David Warner",
+    "image": "https://i.ibb.co.com/zVtjwrDB/warner-player-of-the-tournamen-0-1200x768-1-1.jpg",
+    "rating": 91,
+    "price": 135000,
+    "role": "Batsman",
+    "batting_style": "Left-hand bat",
+    "country": "Australia"
+  },
+  {
+    "id": 10,
+    "name": "Rashid Khan",
+    "image": "https://i.ibb.co.com/DfQ47hcZ/Rashid-Khan.jpg",
+    "rating": 96,
+    "price": 155000,
+    "role": "Bowler",
+    "batting_style": "Right-hand bat",
+    "country": "Afghanistan"
+  },
+  {
+    "id": 11,
+    "name": "Kieron Pollard",
+    "image": "https://i.ibb.co.com/tPxVN757/Kieron-Pollard.jpg",
+    "rating": 90,
+    "price": 130000,
+    "role": "All-rounder",
+    "batting_style": "Right-hand bat",
+    "country": "West Indies"
+  },
+  {
+    "id": 12,
+    "name": "Imrul Kayes",
+    "image": "https://i.ibb.co.com/4RSzL4FS/44606578-1861941853926168-300801543563640832-n.jpg",
+    "rating": 75,
+    "price": 60000,
+    "role": "Batsman",
+    "batting_style": "Left-hand bat",
+    "country": "Bangladesh"
+  }
+]
