@@ -4,6 +4,7 @@ import Container from "./components/Container/Container"
 import Navbar from "./components/Navbar/Navbar"
 import SelectedPlayer from "./components/SelectedPlayer/SelectedPlayer"
 import { toast, ToastContainer } from "react-toastify"
+import Loading from "./components/Loaders/Loading"
 
 const promise = fetch('./data.json').then(response => response.json())
 function App() {
@@ -38,7 +39,7 @@ function App() {
         {
           toggle
           ?
-          <Suspense fallback={<p>Loading data...</p>} >
+          <Suspense fallback={<Loading/>} >
             <AvailablePlayers
               players={promise}
               blance={blance}
