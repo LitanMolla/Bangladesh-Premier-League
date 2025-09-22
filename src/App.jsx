@@ -6,6 +6,7 @@ import SelectedPlayer from "./components/SelectedPlayer/SelectedPlayer"
 import { toast, ToastContainer } from "react-toastify"
 import Loading from "./components/Loaders/Loading"
 import Hero from "./components/Hero/Hero"
+import Footer from "./components/Footer/Footer"
 
 const promise = fetch('./data.json').then(response => response.json())
 function App() {
@@ -30,7 +31,7 @@ function App() {
         />
         <Hero/>
         <Container>
-          <div className="flex justify-between items-center mb-8">
+          <div className="flex justify-between items-center mb-8 flex-col md:flex-row gap-5">
             <h2 className="text-3xl font-bold">{toggle?'Available Players':`Selected Player (${selected.length}/6)`}</h2>
             <div className="flex border border-gray-300 rounded-lg overflow-hidden">
               <button onClick={()=>setToggle(true)} className={`${toggle && 'bg-yellow-500'} px-5 py-2 font-bold cursor-pointer`}>Available</button>
@@ -58,6 +59,7 @@ function App() {
           />
         }
       </div>
+      <Footer/>
       <ToastContainer
       theme="dark"
       />
