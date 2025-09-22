@@ -1,4 +1,5 @@
 import flogo from '../../assets/logo-footer.png'
+import fbg from '../../assets/bg-shadow.png'
 import Container from '../Container/Container'
 
 const Footer = () => {
@@ -8,7 +9,7 @@ const Footer = () => {
                 <Container>
                     <div className="">
                         <div className="relative -top-35 bg-gray-500/30 p-3 rounded-xl border border-gray-300">
-                            <div className="py-20 bg-[url('./src/assets/bg-shadow.png')] bg-cover bg-gray-200 rounded-xl text-center space-y-3 p-5">
+                            <div style={{backgroundImage:`url(${fbg})`}} className="py-20 bg-cover bg-gray-200 rounded-xl text-center space-y-3 p-5">
                                 <h4 className='text-3xl font-bold'>Subscribe to our Newsletter</h4>
                                 <p className='text-black/70'>Get the latest updates and news right in your inbox!</p>
                                 <div className="max-w-xl mx-auto">
