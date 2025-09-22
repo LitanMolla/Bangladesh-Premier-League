@@ -1,1 +1,5 @@
 @import 'tailwindcss';
+
+@theme{
+    --background-image-hero: url('../src/assets/bg-shadow.png')
+}

@@ -8,12 +8,12 @@ const Navbar = ({blance}) => {
     <>
         <header className="py-5">
             <Container>
-                <nav className="flex justify-between items-center">
+                <nav className="flex justify-between items-center flex-col md:flex-row">
                     <div>
                         <img className="w-18" src={logo} alt="Logo" />
                     </div>
                     <div className="">
-                        <ul className="flex gap-5 items-center">
+                        <ul className="flex gap-5 items-center flex-col md:flex-row">
                             <li className="text-black/70 duration-300 hover:text-black cursor-pointer">Home</li>
                             <li className="text-black/70 duration-300 hover:text-black cursor-pointer">Fixture</li>
                             <li className="text-black/70 duration-300 hover:text-black cursor-pointer">Teams</li>

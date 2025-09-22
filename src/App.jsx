@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar"
 import SelectedPlayer from "./components/SelectedPlayer/SelectedPlayer"
 import { toast, ToastContainer } from "react-toastify"
 import Loading from "./components/Loaders/Loading"
+import Hero from "./components/Hero/Hero"
 
 const promise = fetch('./data.json').then(response => response.json())
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Navbar 
         blance={blance}
         />
+        <Hero/>
         <Container>
           <div className="flex justify-between items-center mb-8">
             <h2 className="text-3xl font-bold">{toggle?'Available Players':`Selected Player (${selected.length}/6)`}</h2>
