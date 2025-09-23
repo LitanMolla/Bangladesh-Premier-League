@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 
 const AvailablePlayerCard = ({ player, blance, setBlance, handelSelect, selected }) => {
     const { role, rating, price, name, image, country, batting_style, id } = player;
-    const [isSelect, setIsSelect] = useState(false)
+    const isSelect = selected.find(item=>item.id===id);
     const selectHandler = () => {
         if (blance < price) {
             return toast.warn('Your balance is too low');
@@ -12,11 +12,6 @@ const AvailablePlayerCard = ({ player, blance, setBlance, handelSelect, selected
         if (selected.length >= 6) {
             return toast.warn('You can select a maximum of 6 players only.');
         }
-        const find = selected.find(item=>item.id===id);
-        if (find) {
-            return toast.warn(`${name} Alredy selected!`)
-        }
-        setIsSelect(true);
         setBlance(blance - price);
         handelSelect(player);
         toast.success(`${name} has been selected successfully!`);
