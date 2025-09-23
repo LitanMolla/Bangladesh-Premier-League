@@ -3,7 +3,7 @@ import { FaFlag, FaUser } from 'react-icons/fa'
 import { toast } from 'react-toastify';
 
 const AvailablePlayerCard = ({ player, blance, setBlance, handelSelect, selected }) => {
-    const { role, rating, price, name, image, country, batting_style } = player;
+    const { role, rating, price, name, image, country, batting_style, id } = player;
     const [isSelect, setIsSelect] = useState(false)
     const selectHandler = () => {
         if (blance < price) {
@@ -11,6 +11,10 @@ const AvailablePlayerCard = ({ player, blance, setBlance, handelSelect, selected
         }
         if (selected.length >= 6) {
             return toast.warn('You can select a maximum of 6 players only.');
+        }
+        const find = selected.find(item=>item.id===id);
+        if (find) {
+            return toast.warn(`${name} Alredy selected!`)
         }
         setIsSelect(true);
         setBlance(blance - price);
@@ -39,9 +43,10 @@ const AvailablePlayerCard = ({ player, blance, setBlance, handelSelect, selected
                     <p className='text-black/70'> {batting_style} </p>
                 </div>
                 <div className="flex justify-between items-center">
-                    <h4 className='font-bold'>Price: ${price}</h4>
-                    <button disabled={isSelect} onClick={selectHandler} className={`${isSelect && 'bg-green-600 text-gray-100 opacity-60'} bg-gray-100 rounded-md px-5 py-2 border border-gray-200 cursor-pointer duration-300 hover:bg-green-600 hover:text-gray-100 disabled:cursor-not-allowed`}>{isSelect ? 'Selected' : 'Choose Player'}</button>
+                    <h4 className='font-bold'>Price: </h4>
+                    <p className='text-black/70'> ${price} </p>
                 </div>
+                <button disabled={isSelect} onClick={selectHandler} className={`${isSelect && 'bg-green-600 text-gray-100 opacity-60'} bg-gray-100 rounded-md px-5 py-2 border border-gray-200 cursor-pointer duration-300 hover:bg-green-600 hover:text-gray-100 disabled:cursor-not-allowed w-full`}>{isSelect ? 'Selected' : 'Choose Player'}</button>
             </div>
         </>
     )
